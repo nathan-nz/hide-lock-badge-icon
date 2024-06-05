@@ -1,5 +1,7 @@
 @import "str-to-list";
 
+$lock_icon_name: ".d-icon-" + $alternative_lock_icon
+
 $list: str-to-list("#{$categories_and_channels}", "|");
 $nested-list: (
 );
@@ -24,7 +26,7 @@ $nested-list: (
         .category-drop [data-value="#{$iconID}"] .restricted,
         [href="/chat/c/#{$lock-icon}/#{$iconID}"],
         [href="/c/#{$lock-icon}/#{$iconID}"] {
-          .d-icon-#{$alternative_lock_icon} {
+          #{$lock_icon_name} {
             display: none;
           }
         }
@@ -40,7 +42,7 @@ $nested-list: (
       .category-drop [data-value="#{$iconID}"] .restricted,
       [href="/chat/c/#{$lock-icon}/#{$iconID}"],
       [href="/c/#{$lock-icon}/#{$iconID}"] {
-        .d-icon-#{$alternative_lock_icon} {
+        #{$lock_icon_name} {
           display: none;
         }
       }
@@ -60,7 +62,7 @@ $nested-list: (
       .category-drop .restricted,
       [href^="/chat/c/"],
       [href^="/c/"] {
-        .d-icon-#{$alternative_lock_icon} {
+        #{$lock_icon_name} {
           display: none;
         }
       }
@@ -76,7 +78,7 @@ $nested-list: (
     .category-drop .restricted,
     [href^="/chat/c/"],
     [href^="/c/"] {
-      .d-icon-#{$alternative_lock_icon} {
+      #{$lock_icon_name} {
         display: none;
       }
     }
