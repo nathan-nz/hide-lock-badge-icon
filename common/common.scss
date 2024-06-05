@@ -1,6 +1,6 @@
 @import "str-to-list";
 
-$lock_icon_name: ".d-icon-" + $alternative_lock_icon
+$lock_icon_name: ".d-icon-" + $alternative_lock_icon;
 
 $list: str-to-list("#{$categories_and_channels}", "|");
 $nested-list: (
